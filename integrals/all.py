@@ -41,11 +41,11 @@ def integral(f, a, b, exact=None):
             abs(I_simpson38 - exact),
         ]
         data["RErr"] = [
-            abs(I_rectangle - exact / exact),
-            abs(I_midpoint - exact / exact),
-            abs(I_trapezoid - exact / exact),
-            abs(I_simpson13 - exact / exact),
-            abs(I_simpson38 - exact / exact),
+            abs((I_rectangle - exact) / exact),
+            abs((I_midpoint - exact) / exact),
+            abs((I_trapezoid - exact) / exact),
+            abs((I_simpson13 - exact) / exact),
+            abs((I_simpson38 - exact) / exact),
         ]
 
     print(pd.DataFrame(data), "\n")
@@ -83,11 +83,11 @@ def repeated_integral(f, a, b, m, exact=None):
             abs(I_simpson38 - exact),
         ]
         data["RErr"] = [
-            abs(I_rectangle - exact / exact),
-            abs(I_midpoint - exact / exact),
-            abs(I_trapezoid - exact / exact),
-            abs(I_simpson13 - exact / exact),
-            abs(I_simpson38 - exact / exact),
+            abs((I_rectangle - exact) / exact),
+            abs((I_midpoint - exact) / exact),
+            abs((I_trapezoid - exact) / exact),
+            abs((I_simpson13 - exact) / exact),
+            abs((I_simpson38 - exact) / exact),
         ]
 
     print(pd.DataFrame(data), "\n")

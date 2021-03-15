@@ -31,6 +31,6 @@ class Newton:
 
 
 it = Newton(lambda x: x + np.log(x), lambda x: 1 + 1/x, 1)
-for _ in range(25):
+for _ in range(6):
     it.next()
 it.print()
